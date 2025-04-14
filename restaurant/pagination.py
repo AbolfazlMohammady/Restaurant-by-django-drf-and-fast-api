@@ -1,0 +1,8 @@
+from rest_framework.pagination import PageNumberPagination
+
+def get_pagination(queryset, request):
+    """اعمال صفحه بندی برای رستوران ها"""
+    paginator = PageNumberPagination()
+    paginator.page_size = 6
+    page_query = paginator.paginate_queryset(queryset, request)
+    return paginator, queryset

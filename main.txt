@@ -1,0 +1,29 @@
+{
+    "phone_or_email": "09339796368",
+    "password": "admin"
+}
+
+uvicorn main:app --reload   
+tasklist | findstr uvicorn 
+اگر پردازشی با uvicorn.exe دیدی، این دستور را بزن:
+taskkill /F /IM uvicorn.exe
+uvicorn mmain:app --host 0.0.0.0 --port 8001 --reload
+
+
+ساخت رستوران
+{
+  "name": "رستوران شاهانه",
+  "description": "بهترین غذای ایرانی",
+  "address": "تهران، خیابان انقلاب",
+  "phone": "09123456789",
+  "table": 10,
+  "desk_chair": 40,
+  "start_of_working_hours": "10:00:00",
+  "end_of_working_hours": "23:00:00",
+  "is_open": true
+}
+
+حذف عکس
+{
+"deleted_images": [10]
+}
